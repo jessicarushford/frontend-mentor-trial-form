@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <main>
+    <section class="about-container">
+      <div class="head-container">
+        <h1>Learn to code by watching others</h1>
+      </div>
+      <div class="p-container">      
+        <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+      </div>
+      <!-- no need to put in separate divs - all in section -->
+    </section>
+
+    <section class="trial-container">
+        <div>
+          <p class="trial"> <span>Try it free 7 days </span> then $20/mo. thereafter</a>
+        </div>
+        <!-- no need for separate divs btw try it free and form ? -->
+    <div>
+      <form class="form-container">
+        <input type="text" name="first-name" id="first-name" placeholder="First Name" required/>
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name" required/>
+        <input type="email" name="email" id="email" placeholder="Email Address" required/>
+        <input type="password" name="password" id="password" placeholder="Password" required/>
+        <!-- no need for LABEl line items -->
+      <button class="submit-button">CLAIM YOUR FREE TRIAL</button>
+      <!-- default button type is submit, no need to add type -->
+      <p class="p-agreement">By clicking the button, you are agreeing to our 
+      <span>
+        <a href="#" class="terms">Terms and Services</a>
+      </span>
+      <!-- No need for span AND anchor tag (just use anchor tag) -->
+        </p>
+      </form>      
+    </div>
+  </main>
+</body>
+</html>
