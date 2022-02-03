@@ -1,145 +1,121 @@
 body,
 h1,
-p,
-span,
-button {
+h2,
+p {
   margin: 0;
+  padding: 0;
 }
 
 body {
-  background-image: url(images/bg-intro-mobile.png);
-  background-color: hsl(0, 100%, 74%);
-  color: white;
-  font-family: "Poppins", sans-serif;
-  margin: 20px;
-  padding: 10px;
-  text-align: center;
-  font-size: 16px;
-  box-sizing: border-box;
-  height: 100vh;
-}
-
-main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("images/bg-intro-mobile.png");
+  padding: 30px;
 }
 
-.about-container {
-  top: 40px;
+h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 0 25px 0;
+  line-height: 1.3;
 }
 
-.head-container {
-  margin: 25px;
+.info {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
 }
 
-.trial {
-  padding: 25px 50px;
+.free-trial-ad {
   background-color: hsl(248, 32%, 49%);
-  margin: 60px 0 20px 0;
+  color: white;
+  padding: 20px 50px;
+  margin: 50px 0 25px 0;
+  text-align: center;
   border-radius: 10px;
-  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px hsla(249, 10%, 26%, 25%);
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.trial span {
-  font-weight: 600;
+.bold {
+  font-weight: 700;
 }
 
-.form-container {
+.free-trial-form {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px hsla(249, 10%, 26%, 25%);
+}
+
+.free-trial-form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+}
+
+.free-trial-form button {
+  width: 100%;
   padding: 20px;
-}
-
-/* .form-containter form input {} instead of doing them separate*/
-
-input[type="text"] {
-  margin: 7px;
-  padding: 10px;
   border-radius: 5px;
-  border: 1px solid lightgray;
-  color: darkgrey;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-}
-
-input[type="email"] {
-  margin: 7px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid lightgray;
-  color: darkgrey;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-}
-
-input[type="password"] {
-  margin: 7px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid lightgray;
-  color: darkgrey;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-}
-
-.submit-button {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 15px;
   background-color: hsl(154, 59%, 51%);
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0 5px 0 hsl(154, 58%, 44%);
-  border: 0;
+  color: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  box-shadow: 0 4px hsl(154, 59%, 46%);
   cursor: pointer;
 }
 
-.submit-button:hover {
-  background-color: hsla(154, 59%, 60%);
+.legal {
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+  margin-top: 20px;
+  text-align: center;
 }
 
-.p-agreement {
-  color: lightgrey;
-  font-size: 10px;
-  margin-top: 10px;
-  font-weight: 500;
-}
-
-.terms {
+.legal a {
   text-decoration: none;
-  font-weight: 700;
   color: hsl(0, 100%, 74%);
+  font-weight: 600;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 768px) {
   body {
-    background-image: url(images/bg-intro-desktop.png);
-    margin: 60px;
-  }
-
-  main {
-    height: 100%;
+    background-image: url("images/bg-intro-desktop.png");
     flex-direction: row;
-    align-items: center;
+    padding: 0 75px;
+    height: 100vh;
   }
 
-  /* main section { flex: 1; } for DRY */
-
-  .about-container {
+  header,
+  main {
     flex: 1;
+    margin: 0 30px;
+  }
+  h1 {
     text-align: left;
-    margin-right: 50px;
   }
-
-  .trial-container {
-    flex: 1;
+  .info {
+    text-align: left;
   }
 }
